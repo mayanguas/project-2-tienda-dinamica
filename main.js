@@ -5,13 +5,13 @@ import { PRODUCTS } from './data';
 document.querySelector('#header').innerHTML = `
 <div id="general-header">
   <div class="logo">
-    <a href="#"><img src="./public/src/icons/logo.svg" alt="Canvas Photography logo" width="40px" height="40px"></a>
+    <a href="#"><img src="./src/images/icons/logo.svg" alt="Canvas Photography logo" width="40px" height="40px"></a>
   </div>
 
   <nav class="navbar">
     <div class="menu-container">
       <label class="navbar-toggle" id="navbar-toggle" for="chkToggle">
-        <img class="menu-movil" src="./public/src/icons/menu.svg" alt="menu-movil" width="30px" height="30px">
+        <img class="menu-movil" src="./src/images/icons/menu.svg" alt="menu-movil" width="30px" height="30px">
       </label>
 
       <input type="checkbox" id="chkToggle" />
@@ -69,7 +69,7 @@ document.querySelector('#aaa').innerHTML = `
         <h1>CÁMARAS FOTOGRÁFICAS</h1>
         <h2>Todos los modelos a los mejores precios</h2>
         <div class="separator-img">
-          <img src="./public/src/icons/separator-grey.svg" alt="separator" width="100px" height="6px">
+          <img src="./src/images/icons/separator-grey.svg" alt="separator" width="100px" height="6px">
         </div>
       </div>
     </div>
@@ -239,14 +239,14 @@ const setupStars = (score) => {
   // Recorro el array desde la posición 1 y pinto 1 estrella por cada número entero que tenga el valor "score" de PRODUCTS:
   for (let i = 1; i < score; i++) {
     startContainer.push(
-      `<span class="star"><img src="./public/src/icons/star.svg" alt="star" width="20px" height="20px"></span>`
+      `<span class="star"><img src="./src/images/icons/star.svg" alt="star" width="20px" height="20px"></span>`
     );
   }
 
   // Recorro el array y pinto una estrella extra (de color gris) hasta completar 5 estrellas:
   for (let i = 1; i <= 5 - Math.floor(score); i++) {
     startContainer.push(
-      `<span class="empty star"><img src="./public/src/icons/empty-star.svg" alt="star" width="20px" height="20px"></span>`
+      `<span class="empty star"><img src="./src/images/icons/empty-star.svg" alt="star" width="20px" height="20px"></span>`
     );
   }
 
